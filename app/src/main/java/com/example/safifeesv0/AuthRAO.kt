@@ -1,4 +1,4 @@
-package com.example.safifeesv0
+package com.example.safifeesv0;
 
 class AuthRAO : ModelRAO() {
 

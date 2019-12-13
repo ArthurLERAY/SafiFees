@@ -11,6 +11,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.fragment.NavHostFragment
 import com.example.safifeesv0.AuthRAO
+import com.example.safifeesv0.ModelRAO
 import com.example.safifeesv0.R
 import kotlinx.android.synthetic.main.fragment_home.*
 import java.net.URL
@@ -24,6 +25,9 @@ class HomeFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        val policy = StrictMode.ThreadPolicy.Builder().permitAll().build()
+
+        StrictMode.setThreadPolicy(policy)
         homeViewModel =
             ViewModelProviders.of(this).get(HomeViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_home, container, false)
@@ -38,6 +42,7 @@ class HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val test_text = view.findViewById<TextView>(R.id.test_get)
+        val authrao = AuthRAO();
         test_text.text = URL("http://192.168.200.152:8000/api/visit/date/2019-12-13").readText();
 
         view.findViewById<View>(R.id.button_home).setOnClickListener {
