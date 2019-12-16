@@ -1,6 +1,7 @@
 package com.example.safifeesv0.ui.home
 
 import android.os.Bundle
+import android.os.Environment
 import android.os.StrictMode
 import android.view.LayoutInflater
 import android.view.View
@@ -13,8 +14,11 @@ import androidx.navigation.fragment.NavHostFragment
 import com.example.safifeesv0.AuthRAO
 import com.example.safifeesv0.ModelRAO
 import com.example.safifeesv0.R
+import com.example.safifeesv0.UserRAO
 import kotlinx.android.synthetic.main.fragment_home.*
+import org.json.JSONObject
 import java.net.URL
+
 
 class HomeFragment : Fragment() {
 
@@ -42,7 +46,10 @@ class HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val test_text = view.findViewById<TextView>(R.id.test_get)
-        test_text.text = URL("http://192.168.200.152:8000/api/visit/date/2019-12-13").readText();
+        val valueArray = arrayListOf("name", "Orlane", "age", "18")
+        val user = UserRAO()
+        val test = user.post("http://192.168.200.152:8000/api/test", valueArray)
+        println(test)
 
         view.findViewById<View>(R.id.button_home).setOnClickListener {
             val action = HomeFragmentDirections
