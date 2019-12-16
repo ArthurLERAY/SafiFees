@@ -42,7 +42,6 @@ class HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val test_text = view.findViewById<TextView>(R.id.test_get)
-        val authrao = AuthRAO();
         test_text.text = URL("http://192.168.200.152:8000/api/visit/date/2019-12-13").readText();
 
         view.findViewById<View>(R.id.button_home).setOnClickListener {

@@ -24,10 +24,6 @@
         "source": "G:\\01-Specialite\\SLAM3\\SafiFees\\app\\src\\main\\res\\layout\\fragment_home.xml"
     },
     {
-        "merged": "G:\\01-Specialite\\SLAM3\\SafiFees\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_slideshow.xml.flat",
-        "source": "G:\\01-Specialite\\SLAM3\\SafiFees\\app\\src\\main\\res\\layout\\fragment_slideshow.xml"
-    },
-    {
         "merged": "G:\\01-Specialite\\SLAM3\\SafiFees\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_menu_gallery.xml.flat",
         "source": "G:\\01-Specialite\\SLAM3\\SafiFees\\app\\src\\main\\res\\drawable\\ic_menu_gallery.xml"
     },
@@ -58,6 +54,10 @@
     {
         "merged": "G:\\01-Specialite\\SLAM3\\SafiFees\\app\\build\\intermediates\\res\\merged\\debug\\layout_content_dashboard.xml.flat",
         "source": "G:\\01-Specialite\\SLAM3\\SafiFees\\app\\src\\main\\res\\layout\\content_dashboard.xml"
+    },
+    {
+        "merged": "G:\\01-Specialite\\SLAM3\\SafiFees\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_profile.xml.flat",
+        "source": "G:\\01-Specialite\\SLAM3\\SafiFees\\app\\src\\main\\res\\layout\\fragment_profile.xml"
     },
     {
         "merged": "G:\\01-Specialite\\SLAM3\\SafiFees\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
